@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1509153862216_1" label="1.Presentacion" name="1.Presentacion">
+<item elementID="=Web" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1509153869143_2" label="2.Servicio" name="2.Servicio">
+<item elementID="=Rest" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1509153875023_3" label="3.Dominio" name="3.Dominio">
+<item elementID="=Entidades" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1509153880732_4" label="4.Persistencia" name="4.Persistencia">
+<item elementID="=DAO" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1509153852456_0" label="Window Working Set" name="Aggregate for window 1509153852454"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1509153883353_5" label="Multiple Working Sets" name="Aggregate:1.Presentacion:2.Servicio:3.Dominio:4.Persistencia:">
+<workingSet IMemento.internal.id="1.Presentacion"/>
+<workingSet IMemento.internal.id="2.Servicio"/>
+<workingSet IMemento.internal.id="3.Dominio"/>
+<workingSet IMemento.internal.id="4.Persistencia"/>
+</workingSet>
+<mruList name="4.Persistencia"/>
+<mruList name="3.Dominio"/>
+<mruList name="2.Servicio"/>
+<mruList name="1.Presentacion"/>
+</workingSetManager>
