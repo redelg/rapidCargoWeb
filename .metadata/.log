@@ -1232,3 +1232,143 @@ java.io.FileNotFoundException: C:\Users\DISCO LOCAL\Desktop\T3SowadWeb\rapidCarg
 
 !ENTRY org.eclipse.jface.text 2 0 2017-11-11 14:40:39.146
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.core.resources 4 568 2017-11-11 14:43:43.659
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\DISCO LOCAL\Desktop\T3SowadWeb\rapidCargoWeb\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1852)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1224)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.resources 4 568 2017-11-11 15:00:29.983
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\DISCO LOCAL\Desktop\T3SowadWeb\rapidCargoWeb\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1852)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1224)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-11 15:01:37.921
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-11 15:01:37.926
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-11-11 15:01:38.059
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-11-11 15:01:38.068
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 568 2017-11-11 15:06:36.482
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\DISCO LOCAL\Desktop\T3SowadWeb\rapidCargoWeb\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1852)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1224)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.resources 4 568 2017-11-11 15:12:09.721
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\DISCO LOCAL\Desktop\T3SowadWeb\rapidCargoWeb\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1852)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1224)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:13:17.143
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:13:19.031
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:13:20.875
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:13:22.720
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:13:25.724
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:13:27.570
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:13:29.435
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:13:36.674
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:13:40.775
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:13:51.468
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:13:53.298
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:13:58.636
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:14:00.479
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:14:04.212
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:14:08.575
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:14:10.403
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:14:12.237
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:14:17.145
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:14:20.264
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/webtools/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-11-11 15:14:31.057
+!MESSAGE No repository found at http://download.jboss.org/jbosstools/updates/webtools/oxygen/webtools/webtools/webtools/webtools/.
