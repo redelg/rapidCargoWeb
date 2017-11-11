@@ -59,12 +59,13 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL HTTP/1.1 Connector on port 8080
     -->
-    <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443" useIPVHosts="true"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
                port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
+	       useIPVHosts="true"
                redirectPort="8443" />
     -->
     <!-- Define a SSL HTTP/1.1 Connector on port 8443
@@ -123,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\sistemas\Desktop\RapidCargoWebT3\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\sistemas\Desktop\RapidCargoWebT3\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Rest" path="/rest" reloadable="true" source="org.eclipse.jst.jee.server:Rest"/><Context docBase="C:\Users\sistemas\Desktop\RapidCargoWebT3\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Web" path="/web" reloadable="true" source="org.eclipse.jst.jee.server:Web"/></Host>
+      <Context docBase="C:\Users\DISCO LOCAL\Desktop\T3SowadWeb\rapidCargoWeb\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\DISCO LOCAL\Desktop\T3SowadWeb\rapidCargoWeb\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Web" path="/web" reloadable="true" source="org.eclipse.jst.jee.server:Web"/></Host>
     </Engine>
   </Service>
 </Server>
