@@ -76,5 +76,4 @@ public class daoVehiculo {
 		return elimino;
 	}
 	
-	
 }

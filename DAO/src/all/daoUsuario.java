@@ -4,6 +4,7 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 
+import todas.Ciudad;
 import todas.Personal;
 import todas.Sucursal;
 import todas.TipoUsuario;
@@ -44,6 +45,13 @@ public class daoUsuario {
 				
 				Sucursal s = new Sucursal();
 				  s.setIdSucursal(rs.getInt("idSucursal"));
+				  s.setNombreAgencia(rs.getString("nombreAgencia"));
+				  
+				Ciudad c = new Ciudad();
+				c.setIdCiudad(rs.getInt("idCiudad"));
+				
+				s.setCiudadSucursal(c);
+				
 				u.setSucursal(s);
 				
 			}
@@ -56,7 +64,5 @@ public class daoUsuario {
 		}
 		return u;
 	}
-
-	
 	
 }

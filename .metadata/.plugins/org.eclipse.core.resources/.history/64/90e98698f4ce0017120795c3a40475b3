@@ -1,0 +1,22 @@
+package all;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+
+
+import todas.TipoVehiculo;
+
+public class daoTipoVehiculo {
+	
+	public static daoTipoVehiculo  _Instancia;
+	private daoTipoVehiculo() {}
+	public static daoTipoVehiculo Instancia() {
+		if(_Instancia==null) {
+			_Instancia = new daoTipoVehiculo();
+		}
+		return _Instancia;
+	}
+
+}

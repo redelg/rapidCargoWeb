@@ -1,0 +1,22 @@
+package all;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+
+import todas.Ciudad;
+import todas.Ruta;
+
+public class daoRuta {
+
+	public static daoRuta  _Instancia;
+	private daoRuta() {}
+	public static daoRuta Instancia() {
+		if(_Instancia==null) {
+			_Instancia = new daoRuta();
+		}
+		return _Instancia;
+	}
+	
+}

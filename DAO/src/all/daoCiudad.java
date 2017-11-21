@@ -17,7 +17,6 @@ public class daoCiudad {
 		}
 		return _Instancia;
 	}
-	
 	public ArrayList<Ciudad> ListarCiudad() throws Exception{
 		Connection cn = Conexion.conectar();
 		ArrayList<Ciudad> lista = new ArrayList<Ciudad>();

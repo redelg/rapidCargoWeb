@@ -19,6 +19,7 @@ public class daoTipoVehiculo {
 		return _Instancia;
 	}
 	
+	
 	public ArrayList<TipoVehiculo> ListarTipoVehiculo() throws Exception{
 		Connection cn = Conexion.conectar();
 		ArrayList<TipoVehiculo> lista = new ArrayList<TipoVehiculo>();

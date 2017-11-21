@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.rapidcargo.rest.CiudadController"/>
+<fullyQualifiedTypeName name="all.daoCiudad"/>
+<fullyQualifiedTypeName name="all.daoRuta"/>
+<fullyQualifiedTypeName name="todas.Ruta"/>
+<fullyQualifiedTypeName name="todas.Ciudad"/>
+<fullyQualifiedTypeName name="all.daoTipoVehiculo"/>
+<fullyQualifiedTypeName name="todas.Vehiculo"/>
+<fullyQualifiedTypeName name="todas.TipoVehiculo"/>
+<fullyQualifiedTypeName name="all.daoVehiculo"/>
+<fullyQualifiedTypeName name="todas.Usuario"/>
+<fullyQualifiedTypeName name="all.daoUsuario"/>
+</qualifiedTypeNameHistroy>

@@ -44,4 +44,16 @@
 		<nature>org.eclipse.wst.common.modulecore.ModuleCoreNature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>DAO</name>
+			<type>2</type>
+			<locationURI>WORKSPACE_LOC/DAO/src</locationURI>
+		</link>
+		<link>
+			<name>Entidades</name>
+			<type>2</type>
+			<locationURI>WORKSPACE_LOC/Entidades/src</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
