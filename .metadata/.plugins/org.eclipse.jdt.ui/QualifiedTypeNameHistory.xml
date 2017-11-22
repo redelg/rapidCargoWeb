@@ -9,6 +9,13 @@
 <fullyQualifiedTypeName name="todas.Vehiculo"/>
 <fullyQualifiedTypeName name="todas.TipoVehiculo"/>
 <fullyQualifiedTypeName name="all.daoVehiculo"/>
-<fullyQualifiedTypeName name="todas.Usuario"/>
 <fullyQualifiedTypeName name="all.daoUsuario"/>
+<fullyQualifiedTypeName name="todas.Personal"/>
+<fullyQualifiedTypeName name="todas.Persona"/>
+<fullyQualifiedTypeName name="todas.Usuario"/>
+<fullyQualifiedTypeName name="all.daoPersonal"/>
+<fullyQualifiedTypeName name="todas.TipoUsuario"/>
+<fullyQualifiedTypeName name="all.daoTipoUsuario"/>
+<fullyQualifiedTypeName name="todas.Sucursal"/>
+<fullyQualifiedTypeName name="all.daoSucursal"/>
 </qualifiedTypeNameHistroy>
