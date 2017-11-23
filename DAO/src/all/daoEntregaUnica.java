@@ -28,4 +28,18 @@ public class daoEntregaUnica {
 		return inserto;
 	}
 	
+	public Boolean EntregarEnDomicilio(String idEncomienda, String nombreUsuario) throws Exception{
+		Connection cn = Conexion.conectar();
+		Boolean inserto = false;
+		try {
+			CallableStatement cst = cn.prepareCall("{call spEntregarEnDomicilio(?,?)}");
+			cst.setString(1, nombreUsuario);
+			cst.setString(2, idEncomienda);
+			int i = cst.executeUpdate();
+			if(i>0) {inserto=true;}
+		} catch (Exception e) { throw e;}
+		finally{cn.close();}
+		return inserto;
+	}
+	
 }

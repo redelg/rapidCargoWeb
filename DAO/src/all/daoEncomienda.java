@@ -8,9 +8,13 @@ import java.util.ArrayList;
 
 import todas.Cliente;
 import todas.Encomienda;
+import todas.EntregaUnica;
 import todas.EstadoEncomienda;
 import todas.Persona;
+import todas.Personal;
+import todas.Ruta;
 import todas.Sucursal;
+import todas.Usuario;
 
 public class daoEncomienda {
 
@@ -49,6 +53,71 @@ public class daoEncomienda {
 		} catch (Exception e) { throw e;}
 		finally{cn.close();}
 		return inserto;
+	}
+	
+	public Encomienda DevolverEncomienda (String codigoEncomienda) throws Exception {
+		Connection cn = Conexion.conectar();
+		Encomienda encomienda = null;
+		
+		try {
+			CallableStatement cst = cn.prepareCall("{call spDevolverEncomienda(?)}");
+			cst.setString(1, codigoEncomienda);
+			ResultSet rs = cst.executeQuery();
+			
+			if(rs.next()) 
+			{
+				encomienda= new Encomienda();			
+				encomienda.setIdEncomienda(rs.getInt("IDENCOMIENDA"));
+				encomienda.setCodigoEncomienda(rs.getString("CODIGOENCOMIENDA"));
+					
+				Cliente c = new Cliente();
+					c.setDniCliente(rs.getString("DNI"));
+					Persona p = new Persona();
+						p.setNombres(rs.getString("NOMBRESCLIENTE"));
+						p.setApellidos(rs.getString("APELLIDOSCLIENTE"));
+					c.setPersona(p);
+				encomienda.setCliente(c);
+				
+				Ruta ruta = new Ruta();
+					ruta.setNombreRuta(rs.getString("NOMBRERUTA"));
+				encomienda.setRuta(ruta);
+				
+				encomienda.setFechaRegistro(rs.getString("FECHAREGISTRO"));
+				
+				Sucursal sucursalOrigen = new Sucursal();
+					sucursalOrigen.setNombreAgencia(rs.getString("AGENCIAORIGEN"));
+				encomienda.setSucursalOrigen(sucursalOrigen);
+				
+				Sucursal sucursalDestino = new Sucursal();
+					sucursalDestino.setNombreAgencia(rs.getString("AGENCIADESTINO"));
+				encomienda.setSucursalDestino(sucursalDestino);
+				
+				encomienda.setNombreDestinatario(rs.getString("NOMBREDESTINATARIO"));
+				
+				EstadoEncomienda estadoEncomienda = new EstadoEncomienda();
+					estadoEncomienda.setDescripcionEstadoEncomienda(rs.getString("DESCRIPCIONESTADO"));
+				encomienda.setEstadoEncomienda(estadoEncomienda);
+				
+				EntregaUnica entregaUnica = new EntregaUnica();
+					entregaUnica.setFechaEntrega(rs.getDate("FECHAENTREGA"));
+					Usuario u = new Usuario();
+						Personal pe = new Personal();
+							Persona pp = new Persona();
+								pp.setNombres(rs.getString("NOMBRES"));
+								pp.setApellidos(rs.getString("APELLIDOS"));
+							pe.setPersona(pp);
+						u.setPersonal(pe);
+					entregaUnica.setUsuario(u);	  
+				encomienda.setEntregaUnica(entregaUnica);
+				
+			}
+		} catch (Exception e) {
+			throw e;
+		}
+		finally {
+			cn.close();
+		}
+		return encomienda;
 	}
 	
 	public ArrayList<Encomienda> ListarEncomiendasSalir(int idSucursalOrigen) throws Exception{

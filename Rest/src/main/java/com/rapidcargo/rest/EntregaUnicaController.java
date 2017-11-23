@@ -24,4 +24,16 @@ public class EntregaUnicaController {
 		return inserto;
 	}	
 	
+	@RequestMapping(value = "/Entrega/EntregarEnDomicilio", 
+			method = RequestMethod.GET, produces = "application/json")
+	@ResponseBody
+	public Boolean EntregarEnDomicilio(String idEncomienda, String nombreUsuario) {
+		Boolean inserto = false;
+		try {			
+			inserto = daoEntregaUnica.Instancia().EntregarEnDomicilio(idEncomienda, nombreUsuario);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return inserto;
+	}
 }

@@ -9,7 +9,6 @@
 <fullyQualifiedTypeName name="todas.TipoVehiculo"/>
 <fullyQualifiedTypeName name="all.daoVehiculo"/>
 <fullyQualifiedTypeName name="all.daoUsuario"/>
-<fullyQualifiedTypeName name="todas.Personal"/>
 <fullyQualifiedTypeName name="all.daoPersonal"/>
 <fullyQualifiedTypeName name="todas.TipoUsuario"/>
 <fullyQualifiedTypeName name="all.daoTipoUsuario"/>
@@ -19,12 +18,10 @@
 <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
 <fullyQualifiedTypeName name="all.daoCliente"/>
 <fullyQualifiedTypeName name="all.daoEncomienda"/>
-<fullyQualifiedTypeName name="todas.Ruta"/>
 <fullyQualifiedTypeName name="todas.Encomienda"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
-<fullyQualifiedTypeName name="todas.Usuario"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="todas.Sucursal"/>
 <fullyQualifiedTypeName name="todas.EstadoEncomienda"/>
@@ -34,4 +31,8 @@
 <fullyQualifiedTypeName name="all.daoCargaUnica"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="all.daoEntregaUnica"/>
+<fullyQualifiedTypeName name="todas.Ruta"/>
+<fullyQualifiedTypeName name="todas.EntregaUnica"/>
+<fullyQualifiedTypeName name="todas.Usuario"/>
+<fullyQualifiedTypeName name="todas.Personal"/>
 </qualifiedTypeNameHistroy>
