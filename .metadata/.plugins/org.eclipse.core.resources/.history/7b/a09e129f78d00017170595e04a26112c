@@ -48,6 +48,7 @@ public class EncomiendaController {
 			uCajero.setNombreUsuario(usuarioCajero);
 			
 			encomienda.setUsuarioCajero(uCajero);
+			
 			encomienda.setPeso(peso);
 			encomienda.setMontoPago(montoPago);
 			encomienda.setDescripcionEncomienda(descripcionEncomienda);

@@ -17,7 +17,6 @@ import todas.Usuario;
 @Controller
 public class EncomiendaController {
 
-	
 	@RequestMapping(value = "/Encomienda/RegistrarEncomienda", method = RequestMethod.GET, 
 			produces ="application/json")
 		public @ResponseBody Boolean RegistrarEncomienda(String dniCliente,int idRuta,String fechaLlegada,String nombreDestinatario,String direccionDestinatario
@@ -48,6 +47,7 @@ public class EncomiendaController {
 			uCajero.setNombreUsuario(usuarioCajero);
 			
 			encomienda.setUsuarioCajero(uCajero);
+			
 			encomienda.setPeso(peso);
 			encomienda.setMontoPago(montoPago);
 			encomienda.setDescripcionEncomienda(descripcionEncomienda);
