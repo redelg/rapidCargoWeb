@@ -59,6 +59,7 @@ public class RutasController {
 		public @ResponseBody ArrayList<Ruta> ListarRutasCajero(String idCiudad ) {
 		ArrayList<Ruta> r = null;
 		try {
+			
 			r= daoRuta.Instancia().ListarRutasCajero(idCiudad);
 		} catch (Exception e) {
 			e.printStackTrace();
