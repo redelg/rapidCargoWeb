@@ -35,4 +35,22 @@ public class daoSucursal {
 		finally{cn.close();}
 		return lista;
 	}
+	
+	public ArrayList<Sucursal> ListarSucursalesCajero(String idRuta) throws Exception{
+		Connection cn = Conexion.conectar();
+		ArrayList<Sucursal> lista = new ArrayList<Sucursal>();
+		try {
+			CallableStatement cst = cn.prepareCall("{call spListarSucursalesDestino(?)}");
+			cst.setString(1,idRuta);
+			ResultSet rs = cst.executeQuery();
+			while(rs.next()){
+				Sucursal s = new Sucursal();
+				s.setIdSucursal(rs.getInt("IDSUCURSAL"));
+				s.setNombreAgencia(rs.getString("NOMBREAGENCIA"));
+				lista.add(s);
+			}
+		} catch (Exception e) { throw e;}
+		finally{cn.close();}
+		return lista;
+	}
 }

@@ -66,6 +66,24 @@ public class daoRuta {
 		return lista;
 	}
 	
+	public ArrayList<Ruta> ListarRutasCajero(String idCiudad) throws Exception{
+		Connection cn = Conexion.conectar();
+		ArrayList<Ruta> lista = new ArrayList<Ruta>();
+		try {
+			CallableStatement cst = cn.prepareCall("{call spListarRutasCajero(?)}");
+			cst.setString(1,idCiudad);
+			ResultSet rs = cst.executeQuery();
+			while(rs.next()){
+				Ruta r = new Ruta();
+				r.setIdRuta(rs.getInt("idRuta"));
+				r.setNombreRuta(rs.getString("nombreRuta"));
+				lista.add(r);
+			}
+		} catch (Exception e) { throw e;}
+		finally{cn.close();}
+		return lista;
+	}
+	
 	public Boolean EliminarRuta(String idRuta) throws Exception{
 		Connection cn = Conexion.conectar();
 		Boolean elimino = false;

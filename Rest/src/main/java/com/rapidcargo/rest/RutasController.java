@@ -54,6 +54,19 @@ public class RutasController {
 		return r;
 	}
 	
+	@RequestMapping(value = "/Ruta/ListarRutasCajero", method = RequestMethod.GET, 
+			produces ="application/json")
+		public @ResponseBody ArrayList<Ruta> ListarRutasCajero(String idCiudad ) {
+		ArrayList<Ruta> r = null;
+		try {
+			
+			r= daoRuta.Instancia().ListarRutasCajero(idCiudad);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return r;
+	}
+	
 	@RequestMapping(value = "/Ruta/EliminarRuta", method = RequestMethod.GET, 
 			produces ="application/json")
 	public @ResponseBody Boolean DesactivarRuta(String idRuta) {

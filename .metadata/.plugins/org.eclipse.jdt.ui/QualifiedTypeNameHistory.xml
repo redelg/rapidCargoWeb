@@ -3,7 +3,6 @@
 <fullyQualifiedTypeName name="com.rapidcargo.rest.CiudadController"/>
 <fullyQualifiedTypeName name="all.daoCiudad"/>
 <fullyQualifiedTypeName name="all.daoRuta"/>
-<fullyQualifiedTypeName name="todas.Ruta"/>
 <fullyQualifiedTypeName name="todas.Ciudad"/>
 <fullyQualifiedTypeName name="all.daoTipoVehiculo"/>
 <fullyQualifiedTypeName name="todas.Vehiculo"/>
@@ -11,11 +10,23 @@
 <fullyQualifiedTypeName name="all.daoVehiculo"/>
 <fullyQualifiedTypeName name="all.daoUsuario"/>
 <fullyQualifiedTypeName name="todas.Personal"/>
-<fullyQualifiedTypeName name="todas.Persona"/>
-<fullyQualifiedTypeName name="todas.Usuario"/>
 <fullyQualifiedTypeName name="all.daoPersonal"/>
 <fullyQualifiedTypeName name="todas.TipoUsuario"/>
 <fullyQualifiedTypeName name="all.daoTipoUsuario"/>
-<fullyQualifiedTypeName name="todas.Sucursal"/>
 <fullyQualifiedTypeName name="all.daoSucursal"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.CallableStatement"/>
+<fullyQualifiedTypeName name="all.daoCliente"/>
+<fullyQualifiedTypeName name="todas.Persona"/>
+<fullyQualifiedTypeName name="all.daoEncomienda"/>
+<fullyQualifiedTypeName name="todas.Sucursal"/>
+<fullyQualifiedTypeName name="todas.Ruta"/>
+<fullyQualifiedTypeName name="todas.Cliente"/>
+<fullyQualifiedTypeName name="todas.Encomienda"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="todas.Usuario"/>
 </qualifiedTypeNameHistroy>
