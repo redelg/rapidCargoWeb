@@ -1,5 +1,7 @@
 package com.rapidcargo.rest;
 
+import java.util.ArrayList;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -56,6 +58,42 @@ public class EncomiendaController {
 			e.printStackTrace();
 		}
 		return inserto;
+	}
+	
+	@RequestMapping(value = "/Encomienda/ListarEncomiendasSalir", method = RequestMethod.GET, 
+			produces ="application/json")
+		public @ResponseBody ArrayList<Encomienda> ListarEncomiendasSalir(int idSucursalOrigen) {
+		ArrayList<Encomienda> en = null;
+		try {
+			en= daoEncomienda.Instancia().ListarEncomiendasSalir(idSucursalOrigen);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return en;
+	}
+	
+	@RequestMapping(value = "/Encomienda/ListarEncomiendasEntregaSucursal", method = RequestMethod.GET, 
+			produces ="application/json")
+		public @ResponseBody ArrayList<Encomienda> ListarEncomiendasEntregaSucursal(int idSucursalOrigen) {
+		ArrayList<Encomienda> en = null;
+		try {
+			en= daoEncomienda.Instancia().ListarEncomiendasEntregaSucursal(idSucursalOrigen);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return en;
+	}
+	
+	@RequestMapping(value = "/Encomienda/ListarEncomiendasEntregaDomicilio", method = RequestMethod.GET, 
+			produces ="application/json")
+		public @ResponseBody ArrayList<Encomienda> ListarEncomiendasEntregaDomicilio(int idSucursalOrigen) {
+		ArrayList<Encomienda> en = null;
+		try {
+			en= daoEncomienda.Instancia().ListarEncomiendasEntregaDomicilio(idSucursalOrigen);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return en;
 	}
 	
 }

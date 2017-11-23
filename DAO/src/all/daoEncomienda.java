@@ -2,9 +2,15 @@ package all;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 
+import todas.Cliente;
 import todas.Encomienda;
+import todas.EstadoEncomienda;
+import todas.Persona;
+import todas.Sucursal;
 
 public class daoEncomienda {
 
@@ -43,6 +49,95 @@ public class daoEncomienda {
 		} catch (Exception e) { throw e;}
 		finally{cn.close();}
 		return inserto;
+	}
+	
+	public ArrayList<Encomienda> ListarEncomiendasSalir(int idSucursalOrigen) throws Exception{
+		Connection cn = Conexion.conectar();
+		ArrayList<Encomienda> lista = new ArrayList<Encomienda>();
+		try {
+			CallableStatement cst = cn.prepareCall("{call spListarEncomiendasSalida (?)}");
+			cst.setInt(1,idSucursalOrigen);
+			ResultSet rs = cst.executeQuery();
+			while(rs.next()){
+				
+				Encomienda e = new Encomienda();
+				e.setIdEncomienda(rs.getInt("IDENCOMIENDA"));
+				e.setPeso(rs.getFloat("PESO"));
+				e.setFechaLlegada(rs.getString("FECHALLEGADA"));
+				
+				Sucursal s = new Sucursal();
+				s.setNombreAgencia(rs.getString("NOMBREAGENCIA"));
+				e.setSucursalOrigen(s);
+					
+				EstadoEncomienda ee = new EstadoEncomienda();
+				ee.setDescripcionEstadoEncomienda(rs.getString("DESCRIPCIONESTADO"));
+				e.setEstadoEncomienda(ee);
+				
+				lista.add(e);
+			}
+		} catch (Exception e) { throw e;}
+		finally{cn.close();}
+		return lista;
+	}
+	
+	public ArrayList<Encomienda> ListarEncomiendasEntregaSucursal(int idSucursalOrigen) throws Exception{
+		Connection cn = Conexion.conectar();
+		ArrayList<Encomienda> lista = new ArrayList<Encomienda>();
+		try {
+			CallableStatement cst = cn.prepareCall("{call spListarEncomiendasEntregaSucursal (?)}");
+			cst.setInt(1,idSucursalOrigen);
+			ResultSet rs = cst.executeQuery();
+			while(rs.next()){
+				
+				Encomienda e = new Encomienda();
+				e.setCodigoEncomienda(rs.getString("CODIGOENCOMIENDA"));
+				e.setIdEncomienda(rs.getInt("IDENCOMIENDA"));
+				e.setNombreDestinatario(rs.getString("NOMBREDESTINATARIO"));
+				e.setDireccionDestinatario(rs.getString("DIRECCIONDESTINATARIO"));
+				e.setFechaLlegada(rs.getString("FECHALLEGADA"));
+				
+				EstadoEncomienda ee = new EstadoEncomienda();
+				ee.setDescripcionEstadoEncomienda(rs.getString("DESCRIPCIONESTADO"));
+				e.setEstadoEncomienda(ee);
+				
+				Cliente c = new Cliente();
+				Persona p = new Persona();
+				p.setNombres(rs.getString("NOMBRES"));
+				p.setApellidos(rs.getString("APELLIDOS"));
+				c.setPersona(p);
+				e.setCliente(c);
+				
+				lista.add(e);
+			}
+		} catch (Exception e) { throw e;}
+		finally{cn.close();}
+		return lista;
+	}
+	
+	public ArrayList<Encomienda> ListarEncomiendasEntregaDomicilio(int idSucursalOrigen) throws Exception{
+		Connection cn = Conexion.conectar();
+		ArrayList<Encomienda> lista = new ArrayList<Encomienda>();
+		try {
+			CallableStatement cst = cn.prepareCall("{call spListarEncomiendasEntregaDomicilio (?)}");
+			cst.setInt(1,idSucursalOrigen);
+			ResultSet rs = cst.executeQuery();
+			while(rs.next()){
+				
+				Encomienda e = new Encomienda();
+				e.setIdEncomienda(rs.getInt("IDENCOMIENDA"));
+				e.setNombreDestinatario(rs.getString("NOMBREDESTINATARIO"));
+				e.setDireccionDestinatario(rs.getString("DIRECCIONDESTINATARIO"));
+				e.setFechaLlegada(rs.getString("FECHALLEGADA"));
+				
+				EstadoEncomienda ee = new EstadoEncomienda();
+				ee.setDescripcionEstadoEncomienda(rs.getString("DESCRIPCIONESTADO"));
+				e.setEstadoEncomienda(ee);
+				
+				lista.add(e);
+			}
+		} catch (Exception e) { throw e;}
+		finally{cn.close();}
+		return lista;
 	}
 	
 }
