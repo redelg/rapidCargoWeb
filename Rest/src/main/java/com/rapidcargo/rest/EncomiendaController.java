@@ -107,4 +107,16 @@ public class EncomiendaController {
 		return en;
 	}
 	
+	@RequestMapping(value = "/Encomienda/ListarEncomiendaGerente", method = RequestMethod.GET, 
+			produces ="application/json")
+		public @ResponseBody ArrayList<Encomienda> ListarEncomiendaGerente(String fechaInicio, String fechaFin) {
+		ArrayList<Encomienda> en = null;
+		try {
+			en= daoEncomienda.Instancia().ListarEncomiendaGerente(fechaInicio, fechaFin);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return en;
+	}
+	
 }

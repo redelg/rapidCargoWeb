@@ -120,6 +120,51 @@ public class daoEncomienda {
 		return encomienda;
 	}
 	
+	public ArrayList<Encomienda> ListarEncomiendaGerente(String fechaInicio, String fechaFin) throws Exception{
+		Connection cn = Conexion.conectar();
+		ArrayList<Encomienda> lista = new ArrayList<Encomienda>();
+		try {
+			CallableStatement cst = cn.prepareCall("{call spListarEncomiendasGerente (?,?)}");
+			cst.setString(1,fechaInicio);
+			cst.setString(2,fechaFin);
+			ResultSet rs = cst.executeQuery();
+			while(rs.next()){
+				
+				Encomienda e = new Encomienda();
+				e.setIdEncomienda(rs.getInt("IDENCOMIENDA"));
+				e.setCodigoEncomienda(rs.getString("CODIGOENCOMIENDA"));
+					Cliente c = new Cliente();
+					    Persona p = new Persona();
+						p.setDNI(rs.getString("DNI"));
+						p.setNombres(rs.getString("NOMBRES"));
+						p.setApellidos(rs.getString("APELLIDOS"));
+					c.setPersona(p);
+				e.setCliente(c);
+				
+				Ruta r = new Ruta();
+				  r.setNombreRuta(rs.getString("NOMBRERUTA"));
+				e.setRuta(r);
+				
+				e.setNombreDestinatario(rs.getString("NOMBREDESTINATARIO"));
+				e.setFechaRegistro(rs.getString("FECHAREGISTRO"));
+				
+			    EntregaUnica eu = new EntregaUnica();
+					eu.setFechaEntrega(rs.getDate("FECHAENTREGA"));
+				e.setEntregaUnica(eu);
+
+				e.setMontoPago(rs.getFloat("MONTOPAGO"));
+				
+				EstadoEncomienda ee = new EstadoEncomienda();
+					ee.setDescripcionEstadoEncomienda(rs.getString("DESCRIPCIONESTADO"));
+				e.setEstadoEncomienda(ee);
+				
+				lista.add(e);
+			}
+		} catch (Exception e) { throw e;}
+		finally{cn.close();}
+		return lista;
+	}
+	
 	public ArrayList<Encomienda> ListarEncomiendasSalir(int idSucursalOrigen) throws Exception{
 		Connection cn = Conexion.conectar();
 		ArrayList<Encomienda> lista = new ArrayList<Encomienda>();
