@@ -254,4 +254,17 @@ public class daoEncomienda {
 		return lista;
 	}
 	
+	public Boolean TrasladarEncomienda(Encomienda encomienda) throws Exception{
+		Connection cn = Conexion.conectar();
+		Boolean edito = false;
+		try {
+			CallableStatement cst = cn.prepareCall("{call spTrasladarEncomienda(?)}");
+			cst.setInt(1, encomienda.getIdEncomienda());
+			int i = cst.executeUpdate();
+			if(i>0) {edito=true;}
+		} catch (Exception e) { throw e;}
+		finally{cn.close();}
+		return edito;
+	}
+	
 }

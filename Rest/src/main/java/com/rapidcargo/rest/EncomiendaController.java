@@ -136,4 +136,18 @@ public class EncomiendaController {
 		return encomienda.validarPesoLimite(peso);
 	}
 	
+	@RequestMapping(value = "/Encomienda/TrasladarEncomienda", 
+			method = RequestMethod.GET, produces = "application/json")
+		public @ResponseBody Boolean TrasladarEncomienda(int idEncomienda) {
+		Boolean edito = false;
+		try {
+			Encomienda encomienda = new Encomienda();
+			encomienda.setIdEncomienda(idEncomienda);		
+			edito = daoEncomienda.Instancia().TrasladarEncomienda(encomienda);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return edito;
+	}
+	
 }
