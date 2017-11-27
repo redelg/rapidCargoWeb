@@ -52,4 +52,15 @@ public class ClienteController {
 		}
 		return c;
 	}
+	
+	@RequestMapping(value = "/Cliente/ValidarDNI", method = RequestMethod.GET, produces = "application/json")
+	public @ResponseBody Boolean ValidarDNI(String dni) {
+		Boolean valido = false;
+		try {
+			valido = daoCliente.Instancia().ValidarDniCliente(dni);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return valido;
+	}
 }

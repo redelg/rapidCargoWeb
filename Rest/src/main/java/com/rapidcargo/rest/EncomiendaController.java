@@ -119,4 +119,21 @@ public class EncomiendaController {
 		return en;
 	}
 	
+	@RequestMapping(value = "/Encomienda/calcularMonto", method = RequestMethod.GET, 
+			produces ="application/json")
+		public @ResponseBody float calcularMontoPago(float peso) {
+		Encomienda encomienda = new Encomienda();
+		
+		return encomienda.calcularPago(peso);
+	}
+	
+	
+	@RequestMapping(value = "/Encomienda/validarPeso", method = RequestMethod.GET, 
+			produces ="application/json")
+		public @ResponseBody Boolean validarPeso(float peso) {
+		Encomienda encomienda = new Encomienda();
+		
+		return encomienda.validarPesoLimite(peso);
+	}
+	
 }

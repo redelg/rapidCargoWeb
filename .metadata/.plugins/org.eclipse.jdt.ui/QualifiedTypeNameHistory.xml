@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="all.daoRuta"/>
 <fullyQualifiedTypeName name="todas.Ciudad"/>
 <fullyQualifiedTypeName name="all.daoTipoVehiculo"/>
-<fullyQualifiedTypeName name="todas.Vehiculo"/>
 <fullyQualifiedTypeName name="todas.TipoVehiculo"/>
 <fullyQualifiedTypeName name="all.daoVehiculo"/>
 <fullyQualifiedTypeName name="all.daoUsuario"/>
@@ -26,15 +25,16 @@
 <fullyQualifiedTypeName name="all.daoEntregaUnica"/>
 <fullyQualifiedTypeName name="todas.Ruta"/>
 <fullyQualifiedTypeName name="todas.EntregaUnica"/>
-<fullyQualifiedTypeName name="todas.Usuario"/>
 <fullyQualifiedTypeName name="todas.Personal"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="todas.Tmp"/>
 <fullyQualifiedTypeName name="all.daoTmp"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="todas.Vehiculo"/>
+<fullyQualifiedTypeName name="todas.Usuario"/>
 </qualifiedTypeNameHistroy>

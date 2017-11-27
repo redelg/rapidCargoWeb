@@ -130,4 +130,24 @@ public class Encomienda {
 	public void setCargaUnica(CargaUnica cargaUnica) {
 		this.cargaUnica = cargaUnica;
 	}
+	
+	public float calcularPago (float peso) {
+		if(peso <= 5)
+			return peso*3;
+		if(peso <= 10)
+			return peso*4;
+		if(peso <= 15)
+			return peso*4.75f;
+		else
+			return peso*5.25f;
+	}
+	
+	
+	public Boolean validarPesoLimite (float peso) {
+		if(peso <= 0)
+			return false;
+		if (peso <= 20 )
+			return true;
+		else return false;
+	}
 }

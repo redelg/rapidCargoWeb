@@ -68,5 +68,29 @@ public class daoCliente {
 		}
 		return c;
 	}
-	
+	public Boolean ValidarDniCliente (String dni) throws Exception {
+		Connection cn = Conexion.conectar();
+		Cliente c = null;
+		try {
+			CallableStatement cst = cn.prepareCall("{call spValidarDniCliente(?)}");
+			cst.setString(1, dni);
+			ResultSet rs = cst.executeQuery();
+			
+			if(rs.next()) {
+				Cliente cliente = new Cliente();
+				cliente.setDniCliente(rs.getString("DNI"));
+				c = cliente;
+			}
+			
+		} catch (Exception e) {
+			throw e;
+		}
+		finally {
+			cn.close();
+		}
+		if(c == null)
+			return false;
+		else
+			return true;
+	}
 }
