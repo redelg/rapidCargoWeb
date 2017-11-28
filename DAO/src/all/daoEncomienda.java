@@ -254,6 +254,61 @@ public class daoEncomienda {
 		return lista;
 	}
 	
+	public ArrayList<Encomienda> ListarEncomiendasTrasladoBus(String nombreConductor) throws Exception{
+		Connection cn = Conexion.conectar();
+		ArrayList<Encomienda> lista = new ArrayList<Encomienda>();
+		try {
+			CallableStatement cst = cn.prepareCall("{call spListarEncomiendasTrasladoBus (?)}");
+			cst.setString(1,nombreConductor);
+			ResultSet rs = cst.executeQuery();
+			while(rs.next()){
+				
+				Encomienda e = new Encomienda();
+				e.setIdEncomienda(rs.getInt("IDENCOMIENDA"));
+				e.setFechaLlegada(rs.getString("FECHALLEGADA"));
+				e.setDescripcionEncomienda(rs.getString("DESCRIPCIONENCOMIENDA"));
+				
+				Ruta r = new Ruta();
+					r.setNombreRuta(rs.getString("NOMBRERUTA"));
+				e.setRuta(r);
+				
+				EstadoEncomienda ee = new EstadoEncomienda();
+					ee.setDescripcionEstadoEncomienda(rs.getString("DESCRIPCIONESTADO"));
+				e.setEstadoEncomienda(ee);
+				
+				lista.add(e);
+			}
+		} catch (Exception e) { throw e;}
+		finally{cn.close();}
+		return lista;
+	}
+	
+	public ArrayList<Encomienda> ListarEncomiendasEntregaMinivan(String nombreConductor) throws Exception{
+		Connection cn = Conexion.conectar();
+		ArrayList<Encomienda> lista = new ArrayList<Encomienda>();
+		try {
+			CallableStatement cst = cn.prepareCall("{call spListarEncomiendasEntregaMinivan (?)}");
+			cst.setString(1,nombreConductor);
+			ResultSet rs = cst.executeQuery();
+			while(rs.next()){
+				
+				Encomienda e = new Encomienda();
+				e.setIdEncomienda(rs.getInt("IDENCOMIENDA"));
+				e.setDescripcionEncomienda(rs.getString("DESCRIPCIONENCOMIENDA"));
+				e.setNombreDestinatario(rs.getString("NOMBREDESTINATARIO"));
+				e.setCodigoEncomienda(rs.getString("CODIGOENCOMIENDA"));
+				
+				EstadoEncomienda ee = new EstadoEncomienda();
+					ee.setDescripcionEstadoEncomienda(rs.getString("DESCRIPCIONESTADO"));
+				e.setEstadoEncomienda(ee);
+				
+				lista.add(e);
+			}
+		} catch (Exception e) { throw e;}
+		finally{cn.close();}
+		return lista;
+	}
+	
 	public Boolean TrasladarEncomienda(Encomienda encomienda) throws Exception{
 		Connection cn = Conexion.conectar();
 		Boolean edito = false;
