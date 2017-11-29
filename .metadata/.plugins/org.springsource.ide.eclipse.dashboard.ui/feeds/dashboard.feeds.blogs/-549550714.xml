@@ -5,7 +5,20 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2017-11-28T19:16:00Z</updated>
+  <updated>2017-11-29T00:18:00Z</updated>
+  <entry>
+    <title>Spring Tips: Spring Cloud Gateway</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/11/29/spring-tips-spring-cloud-gateway" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2017-11-28:3107</id>
+    <updated>2017-11-29T00:18:00Z</updated>
+    <content type="html">&lt;p&gt;Speaker: &lt;a href="https://www.twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hi Spring fans! In this installment of Spring Tips we&amp;rsquo;ll look at the new API gateway project, Spring Cloud Gateway, to support edge service requirements like rate limiting, circuit breakers, proxying, and more.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/TwVtlNX-2Hs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
   <entry>
     <title>Spring AMQP 1.7.5 and 2.0.1 Available</title>
     <link rel="alternate" href="https://spring.io/blog/2017/11/28/spring-amqp-1-7-5-and-2-0-1-available" />
@@ -1107,19 +1120,5 @@ dependencies {&#xD;
   &lt;li&gt;This post is interesting - Hibernate Developer Advocate Vlad Mihalcea looks at how to &lt;a href="https://vladmihalcea.com/2017/11/14/how-to-emulate-createdby-and-lastmodifiedby-from-spring-data-using-the-generatortype-hibernate-annotation/amp/"&gt;simulate Spring Data&amp;rsquo;s &lt;code&gt;@CreatedBy&lt;/code&gt; and &lt;code&gt;@LastModifiedBy&lt;/code&gt; with straight Hibernate&lt;/a&gt;. Interesting.. but why not just use Hibernate &lt;em&gt;and&lt;/em&gt; Spring Data JPA? N&amp;rsquo;er a more natural pair was there :)&lt;/li&gt;
   &lt;li&gt;This has zero things to do with Spring, but I&amp;rsquo;m honored to have been included &lt;a href="https://www.pearsonfrank.com/blog/20-java-professionals-need-follow-twitter"&gt;in this a list of twenty Java developers you should follow on Twitter&lt;/a&gt;. If you want to &lt;a href="http://twitter.com/starbuxman"&gt;follow l&amp;rsquo;il &amp;rsquo;ol me&lt;/a&gt;, I&amp;rsquo;d appreciate it, but you should &lt;em&gt;definitely&lt;/em&gt; follow some of the rest of the folks on that list. Most of them are friends and I can&amp;rsquo;t recommend &amp;rsquo;em highly enough.&lt;/li&gt;
 &lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Task 2.0.0.M2 is now available</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/11/10/spring-cloud-task-2-0-0-m2-is-now-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Glenn Renfro</name>
-    </author>
-    <id>tag:spring.io,2017-11-10:3093</id>
-    <updated>2017-11-10T18:57:17Z</updated>
-    <content type="html">&lt;p&gt;We are pleased to announce that Spring Cloud Task 2.0.0.M2 is now available to download from Spring’s &lt;a href="https://repo.spring.io/libs-milestone-local/org/springframework/cloud/spring-cloud-task-core/2.0.0.M2/"&gt;milestone repository&lt;/a&gt;. Many thanks to all of those who contributed to the release.&lt;/p&gt;
-&lt;p&gt;This release brings Spring Boot 2.0 M5 compatibility. With this upgrade, all dependencies are also upgraded (Spring Cloud, Spring Cloud Stream, Spring Batch, etc).&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-do-you-think" class="anchor" name="what-do-you-think"&gt;&lt;/a&gt;What do you think?&lt;/h2&gt;
-&lt;p&gt;We look forward to your feedback on &lt;a href="https://github.com/spring-cloud/spring-cloud-task/issues"&gt;Github&lt;/a&gt;, &lt;a href="http://stackoverflow.com/tags/spring-cloud-task"&gt;StackOverflow&lt;/a&gt;, &lt;a href="https://gitter.im/spring-cloud/spring-cloud-task"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://cloud.spring.io/spring-cloud-task/"&gt;Spring Cloud Task Home&lt;/a&gt; | &lt;a href="https://github.com/spring-cloud/spring-cloud-task"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-cloud-task/docs/2.0.0.M2/reference/htmlsingle/"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
