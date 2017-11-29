@@ -96,4 +96,75 @@ public class CargaController {
 		}	
 	}
 	
+	@RequestMapping(value = "/ListarEncomiendasDomicilio", method = RequestMethod.GET)
+	public ModelAndView ListarEncomiendasDomicilio(HttpServletRequest req) {		
+		try {
+			Usuario u = (Usuario)req.getSession().getAttribute("usuario");
+			RestTemplate rest = new RestTemplate();
+			String URI = Constantes.urlAPI + "/Encomienda/ListarEncomiendasEntregaDomicilio?idSucursalOrigen="+u.getSucursal().getIdSucursal();
+			ArrayList<Encomienda> lista = new ArrayList<Encomienda>();
+			
+			ArrayList<Encomienda> result = rest.getForObject(URI, lista.getClass());
+			
+			ModelAndView m = new ModelAndView("almacen/encomiendasDomicilio");
+			m.addObject("listita", result);
+			return m;
+		} catch (Exception e) {
+			return new ModelAndView("frmError", "error", e.getMessage());
+		}	
+	}
+	
+	@RequestMapping(value = "/AsignarEncomiendasDomicilio", method = RequestMethod.GET)
+	public ModelAndView AsignarEncomiendasDomicilio(HttpServletRequest req,String idEncomienda) {		
+		try {
+
+			
+			RestTemplate rest = new RestTemplate();
+			//Choferes
+			String URI = Constantes.urlAPI + "/Carga/ListarChoferes";
+			ArrayList<Usuario> listaChoferes = new ArrayList<Usuario>();
+			ArrayList<Usuario> choferes = rest.getForObject(URI, listaChoferes.getClass());
+			
+			//Buses
+			
+			String URI2 = Constantes.urlAPI + "/Carga/ListarMinivan";
+			ArrayList<Vehiculo> listaBuses = new ArrayList<Vehiculo>();
+			ArrayList<Vehiculo> buses = rest.getForObject(URI2, listaBuses.getClass());
+			
+			
+			ModelAndView m = new ModelAndView("almacen/encomiendasDomicilioSeleccion","command",new CargaUnica());
+			m.addObject("choferes", choferes);
+			m.addObject("buses", buses);
+			m.addObject("idEncomienda",idEncomienda);
+			return m;
+		} catch (Exception e) {
+			return new ModelAndView("frmError", "error", e.getMessage());
+		}	
+	}
+	
+	
+	@RequestMapping(value = "/AsignarCargaMinivan", method = RequestMethod.POST)
+	public String AsignarCargaMinivan(@ModelAttribute("SpringWeb")CargaUnica carga, 
+						HttpServletRequest req, ModelMap model) {		
+		try {
+			Usuario u = (Usuario)req.getSession().getAttribute("usuario");
+			carga.setUsuarioAlmacenero(u);
+			
+			RestTemplate rest = new RestTemplate();
+		
+			rest.getMessageConverters().add(new MappingJacksonHttpMessageConverter());
+			rest.getMessageConverters().add(new StringHttpMessageConverter());
+			String uri = Constantes.urlAPI + "/Carga/AsignarCargaMinivan";			
+			ResponseEntity<String> result = rest.postForEntity(uri, carga, String.class);
+			
+			if(result.getBody().toString().equals("true"))
+				return "redirect:/ListarEncomiendasDomicilio?msg=Encomienda Asignada Correctamente";
+			else
+				return "redirect:/ListarEncomiendasDomicilio?msg=No se pudo Asignar la Encomienda";
+		
+		} catch (Exception e) {
+			return "error";
+		}	
+	}
+	
 }
