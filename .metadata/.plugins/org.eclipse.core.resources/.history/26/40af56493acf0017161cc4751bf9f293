@@ -1,0 +1,5 @@
+package com.rapidcargo.rest;
+
+public class PersonalController {
+
+}

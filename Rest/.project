@@ -48,12 +48,12 @@
 		<link>
 			<name>DAO</name>
 			<type>2</type>
-			<locationURI>WORKSPACE_LOC/DAO</locationURI>
+			<locationURI>WORKSPACE_LOC/DAO/src</locationURI>
 		</link>
 		<link>
 			<name>Entidades</name>
 			<type>2</type>
-			<locationURI>WORKSPACE_LOC/Entidades</locationURI>
+			<locationURI>WORKSPACE_LOC/Entidades/src</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

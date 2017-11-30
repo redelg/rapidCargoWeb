@@ -1,0 +1,21 @@
+package all;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+
+import todas.Ciudad;
+
+public class daoCiudad {
+	
+	public static daoCiudad _Instancia;
+	private daoCiudad() {}
+	public static daoCiudad Instancia() {
+		if(_Instancia==null) {
+			_Instancia = new daoCiudad();
+		}
+		return _Instancia;
+	}
+	
+}

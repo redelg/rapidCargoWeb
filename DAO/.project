@@ -18,7 +18,7 @@
 		<link>
 			<name>Entidades</name>
 			<type>2</type>
-			<locationURI>WORKSPACE_LOC/Entidades</locationURI>
+			<locationURI>WORKSPACE_LOC/Entidades/src</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -1,0 +1,25 @@
+package all;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+
+import todas.Personal;
+import todas.Sucursal;
+import todas.TipoUsuario;
+import todas.Usuario;
+
+public class daoUsuario {
+	
+	public static daoUsuario  _Instancia;
+	private daoUsuario() {}
+	public static daoUsuario Instancia() {
+		if(_Instancia==null) {
+			_Instancia = new daoUsuario();
+		}
+		return _Instancia;
+	}
+	
+	
+	
+}

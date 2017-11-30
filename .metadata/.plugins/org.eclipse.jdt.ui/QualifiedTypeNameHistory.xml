@@ -1,2 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.rapidcargo.rest.CiudadController"/>
+<fullyQualifiedTypeName name="all.daoCiudad"/>
+<fullyQualifiedTypeName name="all.daoRuta"/>
+<fullyQualifiedTypeName name="todas.Ciudad"/>
+<fullyQualifiedTypeName name="all.daoTipoVehiculo"/>
+<fullyQualifiedTypeName name="todas.TipoVehiculo"/>
+<fullyQualifiedTypeName name="all.daoVehiculo"/>
+<fullyQualifiedTypeName name="all.daoUsuario"/>
+<fullyQualifiedTypeName name="all.daoPersonal"/>
+<fullyQualifiedTypeName name="todas.TipoUsuario"/>
+<fullyQualifiedTypeName name="all.daoTipoUsuario"/>
+<fullyQualifiedTypeName name="all.daoSucursal"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="all.daoCliente"/>
+<fullyQualifiedTypeName name="all.daoEncomienda"/>
+<fullyQualifiedTypeName name="todas.Encomienda"/>
+<fullyQualifiedTypeName name="todas.Sucursal"/>
+<fullyQualifiedTypeName name="todas.EstadoEncomienda"/>
+<fullyQualifiedTypeName name="todas.Cliente"/>
+<fullyQualifiedTypeName name="todas.Persona"/>
+<fullyQualifiedTypeName name="todas.CargaUnica"/>
+<fullyQualifiedTypeName name="all.daoCargaUnica"/>
+<fullyQualifiedTypeName name="all.daoEntregaUnica"/>
+<fullyQualifiedTypeName name="todas.Ruta"/>
+<fullyQualifiedTypeName name="todas.EntregaUnica"/>
+<fullyQualifiedTypeName name="todas.Personal"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.CallableStatement"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="todas.Tmp"/>
+<fullyQualifiedTypeName name="all.daoTmp"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="todas.Vehiculo"/>
+<fullyQualifiedTypeName name="todas.Usuario"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="pojo.Usuario"/>
+<fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
+<fullyQualifiedTypeName name="utiles.Constantes"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="pojo.Encomienda"/>
+<fullyQualifiedTypeName name="pojo.Vehiculo"/>
+<fullyQualifiedTypeName name="pojo.CargaUnica"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+<fullyQualifiedTypeName name="org.springframework.ui.ModelMap"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+<fullyQualifiedTypeName name="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
+<fullyQualifiedTypeName name="org.springframework.http.converter.StringHttpMessageConverter"/>
+</qualifiedTypeNameHistroy>
